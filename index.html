@@ -51,7 +51,7 @@
           </ul>
         </div>
         <div class="nav-button">
-          <button class="btn">
+          <button class="btn cv-btn">
             Download CV <i class="uil uil-file-alt"></i>
           </button>
         </div>
@@ -79,7 +79,7 @@
             </div>
             <div class="featured-text-btn">
               <button class="btn blue-btn">Hire Me</button>
-              <button class="btn">
+              <button class="btn cv-btn">
                 Download CV <i class="uil uil-file-alt"></i>
               </button>
             </div>
@@ -118,7 +118,7 @@
                   systems and dynamic web applications.
                 </p>
                 <div class="about-btn">
-                  <button class="btn">
+                  <button class="btn cv-btn">
                     Download CV <i class="uil uil-import"></i>
                   </button>
                 </div>
@@ -262,5 +262,21 @@
 
     <!-- ----- MAIN JS ----- -->
     <script src="assets/js/main.js"></script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const cvBtn = document.querySelector(".cv-btn");
+
+        if (cvBtn) {
+          cvBtn.addEventListener("click", function () {
+            window.open(
+                    "https://drive.google.com/file/d/19-6ynCIhGnwwsUbvxQMM6tHiHOg3WOhZ/view?usp=sharing",
+                    "_blank"
+            );
+          });
+        }
+      });
+    </script>
+
   </body>
 </html>
